@@ -1,0 +1,22 @@
+[package]
+name = "nfqueue-degrader"
+version = "0.1.0"
+authors = ["Holger Kaden <holger.kaden@logmein.com>"]
+edition = "2018"
+
+[[bin]]
+name = "nfqueue_degrader"
+path = "src/main.rs"
+
+[[bin]]
+name = "network_analyzer"
+path = "test/main.rs"
+
+[dependencies]
+libc = "*"
+etherparse = "*"
+rand =  { version = "0.8.0", features = ["small_rng"] }
+csv = "1.1"
+clap ="*"
+log = "*"
+log4rs = "*"
